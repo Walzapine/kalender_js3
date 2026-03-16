@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video id="month-video" autoplay muted loop playsinline preload>
+      <source src="./video/januar.mp4" type="video/mp4"/>
+    </video>
+    <main>
+      <header>
+        <h1 id="page-title">Kalenderblatt</h1>
+        <p id="info-text"></p>
+      </header>
+      <div class="month-navigation">
+        <button id="prev-year">&#8656;</button>
+        <button id="prev-month"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2 id="month-heading"></h2>
+        <button id="next-month"><i class="fa-solid fa-arrow-right"></i></button>
+        <button id="next-year">&#8658;</button>
+      </div>
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Di</th>
+            <th>Mi</th>
+            <th>Do</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>So</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body"></tbody>
+      </table>
+    </main>
+    <section class="history-box">
+      <h3 id="history-title">Historische Ereignisse</h3>
+      <ul id="history-list">
+        <li>Lade Ereignisse...</li>
+      </ul>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
